@@ -1,0 +1,255 @@
+html code of task 1 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Burger Cafe </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="first-section">
+          <div id="navbar">
+                <div id="logo">
+                      <h4> The Burger Cafe </h4>
+                </div>
+                <div id="list">
+                    <ul>
+                        <li id="active">Home</li>
+                        <li>About</li>
+                        <li>Orders</li>
+                        <li>Servive</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div id="searchbar">
+                    <input type="text" id="text" placeholder="Search...." title="search">
+                    <button id="search">Search</button>
+                </div>
+          </div>
+          <div id="info">
+            <div id="left">
+                <h2>Give Yourself a Delicious Treat.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ipsum quos repellat provident unde, quaerat iure porro laborum minima odio.</p>
+            </div>
+            <div id="right"></div>
+          </div>
+    </div>
+    <div id="second-section">
+        <div id="left1">
+
+        </div>
+        <div id="right1">
+              <h2>
+                About our Cafe:
+              </h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sunt quam, autem, aspernatur recusandae eaque, blanditiis ut odio dolores mollitia error placeat. Fugit pariatur, assumenda ex reprehenderit cumque incidunt exercitationem corrupti quaerat facilis voluptatem molestiae, suscipit sunt, voluptates alias sint!</p>
+
+        </div>
+        
+    </div>
+    <div id="third-section">
+        <div id="left2"></div>
+        <div id="right2">
+            <h2>THE BURGER CAFE</h2>
+            <h3>Contact Details : 0987654321</h3>
+            <h4>Address: SEc-28, Faridabad, Haryana</h4>
+        </div>
+    </div>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Task 1 CSS File 
+/*.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#first-section{
+    height: 100vh;
+    width: 100%;
+    
+}
+#navbar{
+    height: 15vh;
+    color: rgb(255, 249, 249);
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#navbar #logo h4{
+    
+    font-size: 2rem;
+
+}
+#navbar #list ul{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    font-size: 1.5rem;
+    list-style: none;
+
+
+}
+#navbar #list ul #active{
+    color: red;
+}
+#navbar #searchbar{
+    align-items: center;
+    justify-content: center;
+}
+#navbar #searchbar #text{
+    border: none;
+    padding: 0.7rem;
+    border-radius: 0.6rem;
+    outline: none;
+}
+#navbar #searchbar #search{
+    border: none;
+    outline: none;
+    padding: 0.7rem;
+    border-radius: 0.6rem;
+    font-weight: 300;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+#navbar #searchbar #search:hover{
+    background-color: white;
+    color: red;
+}
+#info{
+    height: 85vh;
+    display: flex;
+}
+#info #left{
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+}
+#info #left h2{
+    color: rgb(0, 0, 0);
+    font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 20%;
+  font-size: 4rem;
+  margin-top: 15%;
+
+}
+#info #left p{
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    margin-left: 23%;
+    margin-top: 10%;
+    margin-right: 10%;
+    font-size: 1.5rem;
+}
+#info #right{
+    width: 50%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7tWKyw6zBuQzMffAxLeNgZco249Qn1VkN9w&s");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;    
+}
+#second-section{
+    height: 100vh;
+    display: flex;
+}
+#second-section #right1{
+    width: 50%;
+}
+#second-section #right1 h2{
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    margin-left: 15%;
+    margin-top: 5%;
+
+}
+#second-section #right1 p{
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    margin-left: 18%;
+    
+}
+#second-section #left1{
+    align-items: center;
+    width: 50%;
+    background-image: url("https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2017/06/29182124/290617_burgerlist2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-top: 3%;
+}
+#third-section{
+    height: 100vh;
+    
+}
+#third-section #left2{
+width: 50%;
+
+}
+#third-section #right2{
+width: 50%;
+}
+#third-section #right2 h2{
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    
+    margin-left: 15%;
+    
+    
+}
+#third-section #right2 h3{
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    margin-left: 15%;
+    margin-top: 35%;
+}
+#third-section #right2 h4{
+font-family: "Satisfy", cursive;
+font-weight: 400;
+font-style: normal;
+font-size: 2rem;
+margin-left: 15%;
+
+
+}
+#third-section #left2{
+    width: 50%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqMU1Lrj1s3u-VipUVGByIWvYaDmWd9mQZgw&s");
+background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
